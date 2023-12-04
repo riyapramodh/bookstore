@@ -1,0 +1,19 @@
+runtime: php
+env: flex
+
+runtime_config:
+  document_root: .
+
+
+
+env_variables:
+  PROJECT_ID: 'pivotal-nebula-401108'
+  # GOOGLE_CLOUD_STORAGE_BUCKET_NAME: 'bookstore1'
+
+handlers:
+- url: /(.+\.php)$
+  script: auto
+
+- url: /.*
+  static_files: public/index.php
+  upload: public/index.php
