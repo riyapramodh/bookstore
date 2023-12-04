@@ -3,7 +3,7 @@ use Google\Cloud\Storage\StorageClient;
 
 $projectID = "pivotal-nebula-401108";
 $bucketname = "details02";
-$keyfilepath = '/home/riyapramodh2002/pivotal-nebula-401108-af652c5ab79a.json';
+$keyfilepath = '/home/riyapramodh2002/bookstore/pivotal-nebula-401108-af652c5ab79a.json';
 
 $storage = new StorageClient ([
     'projectID' => $projectID,
